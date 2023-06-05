@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="number" class="number" />
+    <button>Check Number</button>
+
+    <script>
+        document.querySelector('button').addEventListener('click', checkNumber); 
+
+        function checkNumber() {
+            var number = document.querySelector('.number').value; 
+            //alert(number);
+            if (number % 2 == 0) {
+                alert('no remainder, so even number')
+            } else {
+                alert('contains remainder, so odd number')
+            }
+     
+        }
+        
+
+    </script>
+</body>
+</html>

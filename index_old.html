@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Odd or Even Number JS Program</title>
+    <style>
+        * {
+            font-family: 'Segoe UI';
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight:100;">JavaScript Program for Finding Out Whether a Number is Odd or Even</h1>
+    <p>Let's create a simple JavaScript program for finding out whether the user-entered number is odd or even.</p>
+    <img src="100-1.gif" height="300" />
+
+    <h2 style="font-weight:100;">Creating the HTML Elements</h2>
+    <p>You'll need an input field and a button to make the JS program interactive.</p>
+    <ol>
+        <li>The input field should be set to receive only numbers. This can be done by setting the <b>type</b> attribute of the input field to <b>number</b> as shown in the image.</li>
+        <li>The input field should also contain the <b>class </b> selector for selecting the user-entered input. Name the <b>class</b> selector as <b>number</b>.</li>
+        <li style="margin-bottom:10px;">Set the text for your button element as Check Number.</li>
+
+        <img src="100-2.gif" height="300" />
+        <li>Save the HTML file and open it in a browser. The input box and button you just created appear on the page as shown below.</li>
+        <img src="100-3.jpg" height="200" width="500" style="object-fit:cover" />
+
+    </ol>
+
+    <p>Note: At this point, these are just HTML elements without any logic written into them needed to find out whether a given number is even or odd. </p>
+
+
+    <h2 style="font-weight:100;">Writing the JavaScript Program</h2>
+    <p>Ensure the javascript you write is enclosed between script tags.</p>
+    <h3 style="font-weight:100;">Adding an Event Listener to the button</h3>
+    <p>We should get the user entered number when they click the Check Number button. To accomplish this, you have to assign a JS Event Listener to the HTML button.</p>
+    <p>Do the following to assign a JS event listener to the button. The steps to be executed can be viewed in the image too.</p>
+    <ol>
+        <li>Select the button using JavaScript with the help of the <a href="#">document.querySelector()</a> method.</li>
+        <li>Next, associate an event listener to the button using the <a href="#">addEventListener()</a> method </li>
+        <li>You'll be required to do 2 things here: </li>
+        <ul>
+            <li>Decide the <a href="#">type of event</a> to be executed when the event listener fires (obviously it's going to be a 'click' event since it's a button we are dealing with here)</li>
+            <li>Write the <a href="#">function</a> to be executed when the event we are listening to is triggered.</li>
+            <li><b>Note:</b> For now let the function <a href="#">alert</a> or display a simple 'checking number....' message. Later we'll modify it to check whether a given number is even or not.</li>
+        </ul>
+        <img src="100-4.gif" height="500" style="margin-top:5px;" />
+    </ol>
+
+    <h3 style="font-weight:100;">Making our Event Listener Listen to User Entered Input</h3>
+    <p>Just modify the function to receive the user input as shown in the image below.</p>
+    <img src="100-5.gif" height="400" style="margin-top:5px;" />
+    <p>Note: The checkNumber() function is now receiving the input value entered by the user (selected with the help of the <a href="#">document.querySelector()</a> method) and storing it in a variable called number for ease of use. You can also double-check whether you are correctly receiving the user input by alerting the variable value as shown in the image below.</p>
+    <img src="100-6.gif" height="400" style="margin-top:5px;" />
+
+    <h3 style="font-weight:100;">Using Modulus Operator (%) to check whether the user entered number is even or odd</h3>
+    <p>Using the Modulus operator (also known as the Remainder operator) which returns the leftover remainder after division can help you decide whether a given number is even or odd.</p>
+    <p>So if the user entered number when divided by 2</p>
+    <ul>
+        <li>Equates to zero (user_entered_number % 2 <a href="#" style="text-decoration:none;">==</a> 0), then it means the number entered is an even number</li>
+        <li>Does not equate to zero (user_entered_number % 2 <a href="#" style="text-decoration:none;">!= </a>0), then it means the number entered is an odd number</li>
+    </ul>
+    <p>Note: Since there are 2 conditions here (odd or even), we can use the modulo operator in an <a href="#">if-else</a> condition as follows:</p>
+    <img src="100-7.gif" height="400" style="margin-top:5px;" />
+
+</body>
+</html>
